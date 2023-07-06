@@ -1,0 +1,905 @@
+{
+    "patients_clean": {
+        "id_key": "_id",
+        "columns": {
+            "age": "",
+            "height": "",
+            "weight": "",
+            "bmi": "",
+            "sex": [
+                "male",
+                "female"
+            ],
+            "blood": [
+                "A",
+                "B",
+                "AB",
+                "O"
+            ],
+            "education": [
+                "Illiterate",
+                "Elementary",
+                "JuniorHigh",
+                "SeniorHigh",
+                "College",
+                "Graduate"
+            ],
+            "nativeLanguage": [
+                "Mandarin",
+                "Taiwanese",
+                "Hakka",
+                "Japanese",
+                "English",
+                "Cantonese",
+                "IndigenousLanguage"
+            ],
+            "religion": [
+                "ChineseFolk",
+                "Taoism",
+                "Buddhism",
+                "Christian",
+                "Catholic"
+            ],
+            "pastJob": [
+                "serviceIndustry",
+                "agriculture",
+                "transportation",
+                "militaryOrEducation",
+                "homemaker"
+            ],
+            "marriage": [
+                "Married",
+                "Single",
+                "Separation",
+                "Divorce",
+                "Widowed"
+            ],
+            "habits": [
+                "Reading",
+                "Music",
+                "Movie",
+                "CardPlaying",
+                "Gardening",
+                "Cooking",
+                "Handicraft"
+            ],
+            "medicalHistory": [
+                "HighBP",
+                "Diabetes",
+                "Dementia",
+                "CVD",
+                "COPD",
+                "CVA",
+                "Arthritis",
+                "UTI",
+                "HeartDisease",
+                "BPH",
+                "KidneyDisease",
+                "PN",
+                "Cancer",
+                "Asthma",
+                "G6PDDeficiency",
+                "HepB",
+                "HepC",
+                "Neurosis",
+                "Parkinson"
+            ],
+            "medications": [
+                "m1",
+                "m2",
+                "m10",
+                "m8",
+                "m7",
+                "m3",
+                "m4",
+                "m5",
+                "m9",
+                "NSAIDs",
+                "m11",
+                "sleeping",
+                "m12",
+                "m6"
+            ],
+            "drugAllergies": [
+                "Iodine",
+                "Anesthetic",
+                "Aspirin",
+                "Codeine",
+                "Acetaminophen",
+                "Sulfa",
+                "Cephalosporin",
+                "Penicillin"
+            ],
+            "foodAllergies": [
+                "Egg",
+                "Wheat",
+                "Seafood",
+                "Peanut",
+                "Honey",
+                "Milk",
+                "Nuts"
+            ],
+            "familyHealthProblems": [
+                "HighBP",
+                "Diabetes",
+                "Dementia",
+                "CVD",
+                "COPD",
+                "CVA",
+                "Arthritis",
+                "UTI",
+                "HeartDisease",
+                "BPH",
+                "KidneyDisease",
+                "PN",
+                "Cancer",
+                "Asthma",
+                "G6PDDeficiency",
+                "HepB",
+                "HepC",
+                "Neurosis",
+                "Parkinson"
+            ]
+        },
+        "time_key": "lastModifiedDate",
+        "time_range": 0
+    },
+    "vitalsigns": {
+        "id_key": "patient",
+        "columns": {
+            "TP": "",
+            "PR": "",
+            "RR": "",
+            "SYS": "",
+            "DIA": "",
+            "SPO2": "",
+            "PAIN": ""
+        },
+        "time_key": "createdDate",
+        "time_range": 7
+    },
+    "bedsores": {
+        "id_key": "patient",
+        "columns": {
+            "woundType": [
+                "bedsore"
+            ],
+            "location": [
+                "00",
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+            ],
+            "grade": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        "time_key": "createdDate",
+        "time_range": 180
+    },
+    "cognitives": {
+        "id_key": "patient",
+        "columns": {
+            "score": ""
+        },
+        "time_key": "createdDate",
+        "time_range": 90
+    },
+    "bloodsugars_clean": {
+        "id_key": "patient",
+        "columns": {
+            "AC": "",
+            "PC": ""
+        },
+        "time_key": "createdDate",
+        "time_range": 14
+    },
+    "phyassts": {
+        "id_key": "patient",
+        "columns": {
+            "gcse": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "C"
+            ],
+            "gcsv": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "T",
+                "E",
+                "A"
+            ],
+            "gcsm": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "conscious": {
+                "清楚": "clear",
+                "混淆 - 人": "confusedOnPeople",
+                "混淆 - 時": "confusedOnTime",
+                "混淆 - 地": "confusedOnLocation",
+                "瞻妄": "delusional",
+                "嗜睡": "lethargy",
+                "木僵": "stupor",
+                "昏迷": "coma"
+            },
+            "orientation": {
+                "有": "yes",
+                "無": "no"
+            },
+            "communication": {
+                "可溝通": "communtable",
+                "片刻做答": "fewMoment",
+                "無法溝通": "unable"
+            },
+            "cv": {
+                "正常": "normal",
+                "心悸": "palpitations",
+                "發紺": "cyanosis",
+                "胸痛": "chestPain",
+                "暈眩": "dizzy",
+                "血壓高": "highBloodPressure",
+                "血壓低": "lowBloodPressure",
+                "杵狀指": "clubbing",
+                "心雜音": "heartMurmur",
+                "心跳過快": "fastHeartbeat",
+                "心跳過慢": "lowHeartbeat",
+                "心律不整": "Arrhythmia",
+                "姿位性低血壓": "posturalHypotension"
+            },
+            "peripheral": {
+                "正常": "normal",
+                "脈動微弱": "weakPulsation",
+                "靜脈曲張": "varicoseVeins",
+                "肢體潰爛": "festeringLimbs",
+                "肢體發燒": "bodyFever",
+                "肢體冰冷": "bodyCold",
+                "肢體腫脹": "bodySwelling",
+                "肢體蒼白": "bodyPale"
+            },
+            "noise": {
+                "正常": "normal",
+                "囉音": "rales",
+                "嗚喘": "whimper",
+                "哮喘": "asthma"
+            },
+            "type": {
+                "正常": "respiratoryNoraml",
+                "呼吸喘": "respiratoryAsthma",
+                "呼吸快": "respiratoryFast",
+                "呼吸慢": "respiratorySlow",
+                "呼吸費力": "respiratoryLaborious",
+                "呼吸困難": "respiratoryDifficult",
+                "端坐呼吸": "orthopnea",
+                "張口呼吸": "mouthBreathing"
+            },
+            "sputum": {
+                "無痰狀": "no",
+                "血狀": "bloody",
+                "痰稠狀": "thick",
+                "稀水狀": "dilute",
+                "少量": "small",
+                "中量": "medium",
+                "多量": "many",
+                "黃色": "yellow",
+                "白色": "white",
+                "紅色": "red",
+                "綠色": "green",
+                "鐵鏽色": "rust",
+                "粉紅色": "pink"
+            },
+            "digest": {
+                "正常": "normal",
+                "胃痛": "stomachache",
+                "噁心": "nausea",
+                "嘔吐": "vomit",
+                "嘔血": "vomitBlood",
+                "解血便": "bloodyStool",
+                "解黑便": "blackStool",
+                "食慾不振": "lossAppetite",
+                "消化不良": "indigestion"
+            },
+            "abdominal": {
+                "柔軟": "soft",
+                "硬突": "hard",
+                "腫塊": "lump",
+                "腹脹": "bloating",
+                "腹水": "ascites",
+                "壓痛": "tenderness"
+            },
+            "peristalsis": {
+                "正常": "normal",
+                "偏快": "fast",
+                "偏慢": "slow",
+                "無蠕動": "no"
+            },
+            "intake": {
+                "由口進食": "mouth",
+                "造廔口": "colostomy",
+                "鼻胃管": "tube"
+            },
+            "swallow": {
+                "平順無困難": "normal",
+                "嗆食機會<1/2": "lowChoking",
+                "嗆食機會>1/2": "highChoking",
+                "完全無法吞嚥": "unable"
+            },
+            "culinary": {
+                "一般": "normal",
+                "糊狀": "mushy",
+                "自製流質": "homemadeLiquid",
+                "配方流質": "formulaLiquid"
+            },
+            "oralMucosa": {
+                "完整": "complete",
+                "乾燥": "dry",
+                "紅腫發炎": "inflammation",
+                "破損潰瘍": "broken"
+            },
+            "teeth": {
+                "正常": "normal",
+                "缺牙": "missing",
+                "固定式假牙": "fixedDenture",
+                "活動式假牙": "removableDenture"
+            },
+            "bodySkin": {
+                "正常": "normal",
+                "搔癢": "itching",
+                "脫皮": "peeling",
+                "水泡": "blister",
+                "膿包": "pustule",
+                "發紺": "cyanosis",
+                "淤斑": "ecchymosis",
+                "水腫": "edema",
+                "紅疹": "redRash",
+                "紅臀": "redHip"
+            },
+            "visionLeft": {
+                "正常": "normal",
+                "近視": "shortSighted",
+                "遠視": "farSighted",
+                "斜視": "inclineSighted",
+                "失明": "blind",
+                "老花": "presbyopia",
+                "眼壓高": "highEyePressure",
+                "白內障": "cataract",
+                "視覺障礙": "impairment",
+                "視力模糊": "blurred"
+            },
+            "VisionRight": {
+                "正常": "normal",
+                "近視": "shortSighted",
+                "遠視": "farSighted",
+                "斜視": "inclineSighted",
+                "失明": "blind",
+                "老花": "presbyopia",
+                "眼壓高": "highEyePressure",
+                "白內障": "cataract",
+                "視覺障礙": "impairment",
+                "視力模糊": "blurred"
+            },
+            "auditoryLeft": {
+                "正常": "normal",
+                "耳鳴": "tinnitus",
+                "重聽": "difficult",
+                "失聰": "deaf",
+                "異物填塞": "objectTamponade",
+                "分泌物異常": "abnormalSecretion"
+            },
+            "auditoryRight": {
+                "正常": "normal",
+                "耳鳴": "tinnitus",
+                "重聽": "difficult",
+                "失聰": "deaf",
+                "異物填塞": "objectTamponade",
+                "分泌物異常": "abnormalSecretion"
+            },
+            "languageExpression": {
+                "正常": "normal",
+                "失語": "aphasia",
+                "言語不清": "slurredSpeech",
+                "肢體語言": "bodyLanguage",
+                "筆談": "writing"
+            },
+            "endocrine": {
+                "正常": "normal",
+                "血糖高": "highBloodsugar",
+                "血糖低": "lowBloodsugar",
+                "血糖不穩": "instableBloodsugar",
+                "高血鉀": "highPotassium",
+                "低血鉀": "lowPotassium",
+                "高血鈉": "highHypernatremia",
+                "低血鈉": "lowHypernatremia",
+                "高血鈣": "highHypercalcaemia",
+                "低血鈣": "lowHypercalcaemia",
+                "高血磷": "highPhosphorus",
+                "低血磷": "lowPhosphorus",
+                "高血鎂": "highMagnesium",
+                "低血鎂": "lowMagnesium"
+            },
+            "urine": {
+                "正常": "normal",
+                "尿布": "diaper",
+                "尿套": "urinal",
+                "間歇性導尿": "intermittentCatheterization",
+                "導尿管留置": "catheterIndwelling",
+                "膀胱造廔口": "bladderStoma"
+            },
+            "urinary": {
+                "正常": "normal",
+                "少尿": "few",
+                "多尿": "many",
+                "頻尿": "frequent",
+                "無尿": "no",
+                "血尿": "bloody",
+                "膿尿": "pyuria",
+                "解尿困難": "difficult",
+                "解尿疼痛": "pain",
+                "解尿燒灼感": "burning"
+            },
+            "urineRoutine": {
+                "清澈": "clear",
+                "混濁": "turbid",
+                "帶血": "bloody",
+                "沈澱物": "precipitate"
+            },
+            "stool": {
+                "正常": "normal",
+                "失禁": "incontinence",
+                "腹瀉": "diarrhea",
+                "便祕": "constipate",
+                "灌腸": "enema",
+                "挖便": "dig",
+                "腸造廔": "intestines"
+            },
+            "gait": {
+                "正常": "normal",
+                "緩慢": "slow",
+                "碎步": "smallsteps",
+                "無法行走": "unable",
+                "步履不穩": "unsteady",
+                "不自主運動": "involuntary"
+            },
+            "aids": {
+                "不需要輔具": "no",
+                "四腳助行器": "fourLeggedWalker",
+                "手杖": "cane",
+                "輪椅": "wheel"
+            },
+            "activity": {
+                "每日固定離床": "regular",
+                "久坐型態": "sedentary",
+                "久臥型態": "sleep",
+                "完全臥床": "bedridden"
+            },
+            "constraints": {
+                "無約束": "no",
+                "預防跌倒": "fallPrevention",
+                "預防自拔管路": "pullingPipesPrevention",
+                "預防自傷": "injuryPrevention",
+                "行為紊亂": "disorder",
+                "協助治療": "assistTreatment"
+            },
+            "sleepCond": {
+                "正常": "normal",
+                "日夜顛倒": "upsideDown",
+                "失眠": "insomnia",
+                "睡眠紊亂": "disturbance"
+            }
+        },
+        "time_key": "createdDate",
+        "time_range": 180
+    },
+    "examreports_clean": {
+        "id_key": "patient",
+        "columns": {
+            "albuminNum": "",
+            "wbc": "",
+            "pyruricAcid": "",
+            "bleedingTime": "",
+            "monocytes": "",
+            "pcs": "",
+            "acs": "",
+            "calcium": "",
+            "esr": "",
+            "rbc": "",
+            "mcv": "",
+            "mch": "",
+            "mchc": "",
+            "icterus": "",
+            "creatinine": "",
+            "kalium": "",
+            "lymphocytes": "",
+            "chloride": "",
+            "mg": "",
+            "sodium": "",
+            "bun": "",
+            "uricAcid": "",
+            "coagulationTime": "",
+            "prothrombinTime": "",
+            "globulin": "",
+            "triglyceride": "",
+            "basophils": "",
+            "eosinophils": "",
+            "neutrophils": "",
+            "hba1c": "",
+            "reticulocytesCount": "",
+            "fibrinogen": "",
+            "hb": "",
+            "serumPhosphorus": "",
+            "serumFerri": "",
+            "ht": "",
+            "platelets": "",
+            "fattyAcid": "",
+            "totalCholesterol": "",
+            "tProtein": "",
+            "sgpt": "",
+            "sgot": "",
+            "hdlC": "",
+            "ldh": "",
+            "scc": "",
+            "urineWbcNum": "",
+            "bioPH": "",
+            "sg": "",
+            "ldlC": "",
+            "urineRbcNum": "",
+            "crystal": "",
+            "egfr": "",
+            "ketoneBodyNum": "",
+            "antiHavLggSelect": {
+                "陽性": "postive",
+                "陰性": "negative"
+            },
+            "antiHavLgmSelect": {
+                "陽性": "postive",
+                "陰性": "negative"
+            },
+            "antiHbc": {
+                "陽性": "postive",
+                "陰性": "negative"
+            },
+            "antiHbcLgm": {
+                "陽性": "postive",
+                "陰性": "negative"
+            },
+            "antiHbe": {
+                "陽性": "postive",
+                "陰性": "negative"
+            },
+            "hbsag": {
+                "陽性": "postive",
+                "陰性": "negative"
+            },
+            "antiHcv": {
+                "陽性": "postive",
+                "陰性": "negative"
+            },
+            "hbeag": {
+                "陽性": "postive",
+                "陰性": "negative"
+            },
+            "bilirubin": {
+                "+": "postive",
+                "-": "negative"
+            },
+            "urobilinogen": {
+                "+": "postive",
+                "-": "negative"
+            },
+            "occultBlood": {
+                "有": "positive",
+                "無": "negative",
+                "2+": "2plus",
+                "3+": "3plus",
+                "4+": "4plus"
+            },
+            "appearance": [
+                "Clear",
+                "Cloudy",
+                "Turbid"
+            ],
+            "bacteria": {
+                "-": "negative",
+                "+": "positive",
+                "2+": "2plus",
+                "3+": "3plus",
+                "4+": "4plus"
+            },
+            "cylinder": {
+                "+": "postive",
+                "-": "negative"
+            },
+            "antiHbs": {
+                "陽性": "postive",
+                "陰性": "negative",
+                "正常": "normal",
+                "異常": "abnormal"
+            },
+            "stoolOccultBlood": {
+                "-": "negative",
+                "+": "positive",
+                "2+": "2plus",
+                "3+": "3plus",
+                "4+": "4plus"
+            },
+            "glucose": {
+                "+": "postive",
+                "-": "negative"
+            },
+            "proteinSelect": {
+                "+": "postive",
+                "-": "negative"
+            },
+            "amoeba": {
+                "+": "postive",
+                "-": "negative"
+            },
+            "stoolParasite": {
+                "+": "postive",
+                "-": "negative"
+            },
+            "bacillaryDysenterySelect": {
+                "+": "postive",
+                "-": "negative"
+            }
+        },
+        "time_key": "createdDate",
+        "time_range": 180
+    },
+    "healthhabits": {
+        "id_key": "patient",
+        "columns": {
+            "isSmoking": [
+                "notSmoking",
+                "quitSmoking",
+                "smoking"
+            ],
+            "isAlcohol": [
+                "notDrinking",
+                "quitAlcohol",
+                "drinking"
+            ],
+            "isBetelNut": [
+                "notChewing",
+                "isChewing",
+                "quitChewing"
+            ]
+        },
+        "time_key": "createdDate",
+        "time_range": 90
+    },
+    "nursingnotes": {
+        "id_key": "patient",
+        "columns": {
+            "focus": {
+                "入住": "checkin",
+                "請假": "dayoff",
+                "住院": "hospitalized",
+                "換床": "bedChanged",
+                "返院": "returnToHospital",
+                "退住": "retreat",
+                "門診": "clinic",
+                "就醫": "seekMedical",
+                "外院藥物": "outOfHospitalDrugs",
+                "體溫過高": "hyperthermia",
+                "體溫異常": "abnormalTemperature",
+                "血糖不穩": "unstableBloodsugar",
+                "血壓過高": "highBloodpressure",
+                "測量血糖": "measureBloodsugar",
+                "疼痛": "pain",
+                "消化差": "poorDigestion",
+                "腹瀉": "diarrhea",
+                "便秘": "constipate",
+                "嘔吐": "vomit",
+                "排便異常": "abnormalDefecate",
+                "血液透析": "hemodialysis",
+                "血尿": "hematuria",
+                "皮膚搔癢": "itchySkin",
+                "疹子": "rash",
+                "壓力性損傷": "bedsore",
+                "一般傷口": "generalWound",
+                "傷口護理": "woundCare",
+                "破皮": "brokenSkin",
+                "肢體活動障礙": "physicalDisability",
+                "水腫": "edema",
+                "焦慮": "anxiety",
+                "躁動": "restless",
+                "自拔管路": "selfextractingPipeline",
+                "更換管路": "replacePipeline",
+                "意外事件 - 跌倒": "accidentOfFall",
+                "潛在危險性跌倒": "potentiallyDangerousFall",
+                "咳嗽有痰": "coungWithPhlegm",
+                "呼吸喘": "respiratoryAsthma",
+                "呼吸道清除功能失效": "airwayClearanceFail",
+                "潛在危險性肺吸入": "potentiallyHazardousPulmonaryInhalation",
+                "潛在危險性感染 - 尿道": "potentiallyHazardousPulmonaryUrethra",
+                "潛在危險性感染 - 呼吸道": "potentiallyHazardousPulmonaryRespiratory",
+                "家屬探視": "familyVisit",
+                "復健": "rehabilitation",
+                "聯絡家屬": "contactFamily",
+                "家屬來電": "familyCalls",
+                "照會": "note",
+                "感覺/知覺改變 - 方位感": "changesInSenseOfOrientation",
+                "醫師巡診": "doctorVisit",
+                "營養評估": "nutritionalAssessment",
+                "約束": "constraint",
+                "體檢": "physicalExamination",
+                "身體評估": "physicalAssessment",
+                "生活紀錄": "lifeRecord",
+                "其他": "others"
+            }
+        },
+        "time_key": "createdDate",
+        "time_range": 60
+    },
+    "nursingnotedetails": {
+        "id_key": "patient",
+        "columns": {
+            "content": {
+                "失智症": "dementia",
+                "巴金森氏症": "parkinson",
+                "中風": "stroke",
+                "幻覺": "hallucination",
+                "情緒不穩": "unstableEmotion",
+                "吞嚥困難": "hardToSwallow",
+                "躁動": "restless",
+                "大小便失禁": "incontinence",
+                "步態不穩": "unsteadyGait",
+                "高血壓": "highBP",
+                "糖尿病": "diabetes",
+                "心律不整": "arrhythmia",
+                "阿茲海默症": "alzheimer",
+                "認知障礙": "impairCongnitive",
+                "自我照顧能力缺失": "lackOfSelfcare",
+                "幻聽": "auditoryHallucinations",
+                "情緒低落": "depression",
+                "尿失禁": "urinaryIncontinence",
+                "走路不穩": "unsteadyWalking",
+                "疑心病": "suspicious",
+                "妄想": "delusional",
+                "日夜顛倒": "upsideDownDayNight",
+                "暴力": "violence",
+                "健忘": "forgetful",
+                "心血管疾病": "cardiovascularDisease",
+                "肥胖": "obesity",
+                "顫抖": "trembling",
+                "肢體僵硬": "limbStiffness",
+                "動作遲緩": "slowMovement",
+                "大吼": "yell",
+                "重複相同的話": "repeatSameWords",
+                "腦栓塞": "brainEmbolism",
+                "腦出血": "brainHemorrhage",
+                "營養不良": "malnutrition",
+                "甲狀腺機能低下": "hypothyroidism",
+                "電解質不平衡": "electrolyteImbalance",
+                "腦部腫瘤": "brainTumor",
+                "水腦症": "hydrocephalus",
+                "時間混淆": "timeConfusion",
+                "地點混淆": "placeConfusion",
+                "呼吸變慢": "slowBreathing",
+                "體溫上升": "riseBodyTemperature",
+                "血缺氧": "hypoxia",
+                "腦缺氧": "brainHypoxia"
+            }
+        },
+        "time_key": "createdDate",
+        "time_range": 60
+    },
+    "iadlassessments_clean": {
+        "id_key": "patient",
+        "columns": {
+            "iadl": ""
+        },
+        "time_key": "createdDate",
+        "time_range": 30
+    },
+    "treatmentrecords": {
+        "id_key": "patient",
+        "columns": {
+            "type": {
+                "急診": "emergency",
+                "門診": "clinic",
+                "取藥": "takeMedicine",
+                "手術": "operation"
+            },
+            "department": {
+                "骨科": "orthopedics",
+                "家醫科": "familyMedicine",
+                "心臟科": "cardiology",
+                "胸腔科": "chest",
+                "腎臟科": "nephrology",
+                "皮膚科": "dermatology",
+                "神經科": "neurology",
+                "泌尿科": "urology",
+                "復健科": "rehabilitationMedicine",
+                "一般內科": "generalMedicine",
+                "一般外科": "generalSurgery",
+                "乳腺外科": "breast",
+                "肝膽腸胃科": "gastroenterology",
+                "新陳代謝科": "metabolism",
+                "血液腫瘤科": "hemaOncology"
+            },
+            "emergencyCareMeasures": [
+                "measuringVitalSigns",
+                "oxygenUse",
+                "phlegm",
+                "woundTreatment",
+                "CPR"
+            ],
+            "pickUpMethod": [
+                "facility",
+                "family"
+            ]
+        },
+        "time_key": "createdDate",
+        "time_range": 90
+    },
+    "tubes_clean": {
+        "id_key": "patient",
+        "columns": {
+            "normalfoley": "",
+            "normalNG": "",
+            "normaltracheostomy": "",
+            "normalPEG": "",
+            "normalcystostomy": "",
+            "normalenterostomy": "",
+            "SIfoley": "",
+            "SING": "",
+            "SItracheostomy": "",
+            "SIPEG": "",
+            "SIstostomy": "",
+            "SIenterostomy": ""
+        },
+        "time_key": "createdDate",
+        "time_range": 90
+    }
+}
